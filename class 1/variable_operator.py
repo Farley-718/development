@@ -35,12 +35,19 @@
 # print(45%4)
 # Program to find the perimeter of a rectangle
 #P=2(l+w)
-length = 50
-width = 10
-perimeter = 2 * ( length + width )
-print(perimeter)
+# length = 50
+# width = 10
+# perimeter = 2 * ( length + width )
+# print(perimeter)
 
 # Data Types
 
 
 # Integer
+num_one = 65
+print(num_one)
+print(type(num_one))
+#string
+word = "sample" 
+print(word)
+print(type(word))
