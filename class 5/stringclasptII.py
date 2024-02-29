@@ -138,12 +138,21 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
+# email = input("Hello,please enter your email address:")
+# print(email)
 
 # Clean input
 
 # Test 1: It has a "." at the third-to-last index
-
+# email='farley@gmail.com'
+# test_1 = (email[-4]== '.')
+# print(test_1)
+# print('test 1: does the email have a ". at the the third-to-last index ?',test_1)
+ 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
+email = 'farley@gmail.com'
+test_2 = (email[-5] == '@')
+print(test_2)
 
 # Test 3: There is at least one character before the "@" symbol
 
