@@ -150,9 +150,22 @@ Test your code on a few inputs to make sure it works!
 # print('test 1: does the email have a ". at the the third-to-last index ?',test_1)
  
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
-email = 'farley@gmail.com'
-test_2 = (email[-5] == '@')
-print(test_2)
+def test_at_symbol_position(text):
+    # Check if "@" symbol exists
+    if text.count("@") == 1:
+        # Find the index of "@" symbol
+        index_of_at_symbol = text.find("@")
+        # Check if "@" symbol is at the fifth-to-last index or earlier
+        if index_of_at_symbol <= len(text) - 5:
+            return True
+    return False
+
+# Test the function
+test_string = "example@test.com"
+result = test_at_symbol_position(test_string)
+print(result)  # Output: True
+
+
 
 # Test 3: There is at least one character before the "@" symbol
 
