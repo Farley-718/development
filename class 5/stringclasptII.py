@@ -156,9 +156,7 @@ def test_at_symbol_position(text):
         # Find the index of "@" symbol
         index_of_at_symbol = text.find("@")
         # Check if "@" symbol is at the fifth-to-last index or earlier
-        if index_of_at_symbol <= len(text) - 5:
-            return True
-    return False
+        
 
 # Test the function
 test_string = "example@test.com"
