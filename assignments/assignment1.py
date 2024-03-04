@@ -1,4 +1,4 @@
-This program calculates the perimeter of a triangle
+''' This program calculates the perimeter of a triangle
 
 Requirements
     - Comment your code 
@@ -14,11 +14,3 @@ Requirements
     - Output a print statement, "Is the base equal to side 1?"
         +5
 '''
-My work
-
-Attach
-Upload from this device
-No file chosen
-New
-Points
-No points
