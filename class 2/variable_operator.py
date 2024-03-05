@@ -4,14 +4,14 @@
 # print(greeting)
 
 # Addition
-#print(5+4)
-#print(4+7)
-#print(1+3)
+# print(5+4)
+# print(4+7)
+# print(1+3)
 
 # Subtraction
-#print(1-1)
-#print(3-2)
-#print(4-2)
+# print(1-1)
+# print(3-2)
+# print(4-2)
 # Multiplication
 #print(3*3)
 #print(4*8)
