@@ -17,7 +17,7 @@ username = input("enter your username:")
 password = input("enter your password:")
 
 # Create two variables called username and password and set them to any valid string values.
-if username == correct_username and password == correct_username:
+if username == correct_username and password == correct_password:
     print("login successful.")
 else: 
     print("incorrect username or password.")
