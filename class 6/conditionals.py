@@ -118,7 +118,7 @@ This is something else
 
 # Mutually exclusive
     
-# temp_f = 35
+# temp_f = 
 # if temp_f > 70:
 #     print("It is hot outside")
 # elif temp_f > 40:
@@ -148,7 +148,7 @@ This is something else
 
 
 # nested conditionals
-num = 5
+# num = 5
 
 # if num % 2 == 1:
 #     if num < 10:
@@ -179,9 +179,3 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 
 
 # Create your conditional
-
-
-
-
-
-
