@@ -8,13 +8,18 @@ Use conditionals and logical operators to check whether the username and passwor
 If they match, print “Login successful.” If they don't, print “Incorrect username or password.”
 '''
 ''' Exercise solution '''
-
+correct_username = "user321"
+correct_password =  "password321"
 
 
 # Prompt the user to enter their username and password using the input() function.
-
+username = input("enter your username:")
+password = input("enter your password:")
 
 # Create two variables called username and password and set them to any valid string values.
-
+if username == correct_username and password == correct_username:
+    print("login successful.")
+else: 
+    print("incorrect username or password.")
 
 # Create your conditional
