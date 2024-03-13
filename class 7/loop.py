@@ -11,7 +11,8 @@
 
 
 ''' Example Create a while loop that prints every integer from 1 to 10.'''
-
+end = 10
+start = 1 #initalization
 
 
 '''
@@ -22,8 +23,15 @@ This allows you to take user input multiple times without writing multiple lines
 
 Lets look at code that will run infinitely until the user tells it to "stop"
 '''
-
-
+# initalize our string
+# userin = ''
+# while userin != 'stop' :
+#     userin = input("please enter a word, or 'stop' to end the loop:")
+#     print(userin)
+# username, password, day_of_week, = 'hello', 'how', 'are you'
+# print(username)
+# print(password)
+# print(day_of_week)
 '''
 Exercise
 
@@ -38,16 +46,22 @@ If they match, print “Login successful” and end the program.
 '''
 
 # Set sys id and pass
+sys_id = 'admin'
+sys_password = 'password'
 
 
 # Prompt User
+user_id = input("please enter yoour username: ")
+user_password = input("please enter your password: ")
 
 
 # Our initial check, while not equal we will enter loop
 
+    
 
 
-''' For Loops '''
+
+'''For Loops '''
 
 # STRING
 my_string = 'Supercalifragilisticexpialidocious'

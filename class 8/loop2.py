@@ -7,11 +7,13 @@ How do I write a While Loop?
 
 '''
 # For Loop
-colors = ['green', 'blue', 'orange', 'yellow']
+# colors = ['green', 'blue', 'orange', 'yellow']
 
 
 
 # While Loop
+
+''' initialization of variables'''
 
 
 
@@ -19,7 +21,9 @@ colors = ['green', 'blue', 'orange', 'yellow']
 ''' Break Keyword '''
 
 # Lets look at the 2 examples below and take note where the loop stops
-
+userin = '' # intialization of variable
+while userin != 'stop':
+    userin = input("Enter something or hit stop to leave the loop")
 
 
 
@@ -92,6 +96,17 @@ If the string is a number, convert it to a float and add it to a total.
 If the string is a set of letters, concatenate to the other letter strings passed in.
 If it contains a symbol, or is none of the above, do nothing and repeat the loop.
 Make sure to use break and/or continue.
+Example (no error):
+5
+12
+0
+Sum: 17
+
+example (error):
+5
+7
+c
+error : not a number 
 
 
 REQUIREMENTS
