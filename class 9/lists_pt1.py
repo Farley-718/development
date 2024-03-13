@@ -10,11 +10,11 @@ first_planet= planets[0]
 # print(planets[2])
 
 # Update with indexing
-colors = ['red', 'green', 'yellow', 'blue', 'orange']
-print(colors)
-colors[0] = 'black'
-colors[1] = 'orange'
-print('after update',colors)
+# colors = ['red', 'green', 'yellow', 'blue', 'orange']
+# print(colors)
+# colors[0] = 'black'
+# colors[1] = 'orange'
+# print('after update',colors)
 
 
 
@@ -24,8 +24,9 @@ animals = ['dog', 'cat', 'lion', 'tiger', 'eagle']
 
 
 # Len function gives us the amount of items in a list
-modes_of_travel = ['car', 'plane', 'truck', 'train', 'boat']
-
+# modes_of_travel = ['car', 'plane', 'truck', 'train', 'boat']
+# how_many_vehicles = len(modes_of_travel)
+# print(how_many_vehicles)
 
 '''
 Exercise
@@ -37,7 +38,16 @@ planets = ["mercury", "venus", "earth", "mars"]
 0: mercury, 1: venus, 2: earth, 3: mars
 
 '''
+# planets = ["mercury","venus","earth","mars"]
+# print(planets[0])
+# print(planets[1])
+# print(planets[2])
+# print(planets[3])
 
+# counter = 0
+# for a in planets:
+#     print(f'{counter}: {a}',end='') 
+#     counter += 1
 
 
 
@@ -51,7 +61,19 @@ Make sure you filter out any repeats.
 data = ['car', 3, True, False, 4.09, 'Tuesday']
 
 '''
+fname = 'Annie'
+is_warm_out = True
+temp = 98
+
+# print(type(fname))
+# print(type(is_warm_out))
+# print(type(temp))
 # Our collections
+data = ['car',3, True, False, 4.09,'tuesday']
+types_list = [] # this will hold our types
+for d in data:
+    types_list.append(type(d)) # grabbing the type from data, appending to empty list
+print(' our types list which contains duplicate',types_list)
 
 
 # Looping through for types
@@ -59,8 +81,8 @@ data = ['car', 3, True, False, 4.09, 'Tuesday']
 
 
 # Optional, remove repeats using sets
-
-
+types_list=list(set(types_list))
+print('duplicates removed with sets', types_list)
 ''' List Methods '''
 
 '''
