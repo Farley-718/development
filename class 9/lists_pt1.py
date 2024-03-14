@@ -100,19 +100,21 @@ sort() Sorts the list
 
 '''
 
-food = ['ice cream', 'pizza', 'apple', 'burger', 'cookies']
+food = ['ice cream', 'pizza', 'apple', 'burger', 'cookies','burger']
 
 # lets add salad with append
-
+# food.append('salad')
+# print(food)
 
 
 # lets remove all items with clear
-
-
+#
 
 # let create a copy
-
-
+# new_food_list = food.copy()
+# food.append('aspargus')
+# print('this is our copy', new_food_list)
+# print
 # How many times does pizza appear?
 
 
@@ -121,18 +123,23 @@ vegetables = ['carrots', 'asparagus', 'broccoli']
 
 
 # lets find the index value for apple
+# print('the index of the apple is ',food.index('apple'))
 
 # Lets add cereal to the 3rd spot in our list
-
+# food.insert(3, 'cereal')
+# print(food)
 
 # Lets remove a food by index position
-#
+
+# food.pop(1)
+# print(food)
 
 # Lets remove an item with a specified value
-
+# food.remove('burger')
+# print(food)
 
 # Lets reverse our list
-
+#
 
 
 # Lets sort our list
@@ -151,7 +158,20 @@ Exercise: List of Pets
 You want to make a list containing the types of pets that the user has. Keep prompting the user for a pet until they enter "stop". If it's a new pet, add it to the list. If the list already has that pet, don't add it.
 
 '''
+# user_input = '' # initialization
+# pet_names = []# this will capture  animal names
 
+# while user_input != 'stop':
+#     user_input = input("pleaase enter your paets name: ")
+#     if user_input == 'stop': # this is to not add stop to the list
+#         break
+#     elif user_input not in pet_names:
+#         pet_names.append(user_input)
+#     else:
+#         print(f'{user_input} is already on the list')
+
+
+# print(pet_names)
 
 
 ''' Removing duplicates from a list, but leaving 1'''
@@ -160,9 +180,17 @@ colors = ['blue', 'blue', 'blue', 'green', 'red', 'blue', 'blue']
 
 # Option 1 
 
+# new_colors = [] #capture unique colors
+# for c in colors :#looping through orginal list 
+#     if c not in new_colors:
+#         new_colors.append(c)
+# print(new_colors)
+
+
 
 # Option 2 - Using Sets
-
+# colors = list(set(colors))
+# print(colors)
 
 
 
