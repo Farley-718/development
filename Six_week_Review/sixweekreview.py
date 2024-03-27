@@ -252,6 +252,9 @@ Access is database software
 software = ['Word', 'Excel', 'Powerpoint', 'Access']
 purpose = ['word processing', 'spreadsheet', 'presentation', 'database']
 
+# with zip
+# for s,p, in zip(software, purpose):
+#     print()
 
 ''' Python Exercises'''
 
