@@ -263,13 +263,15 @@ Write a Python program that accepts a sequence of comma-separated numbers from t
 
 # Try the split string method
 '''
-
+# result = user_input.split(",")
+# print(result)
 
 '''
 Write a Python program to display the first and last colors from the following list.
 color_list = ["Red","Green","White" ,"Black"]
 '''
-color_list = ["Red","Green","White" ,"Black"]
+# color_list = ["Red","Green","White" ,"Black"]
+# print(f'the first color is {color_list[0]} and the last color is {color_list[-1]}')
 
 
 '''
