@@ -14,22 +14,23 @@ Requirements
     - Output a print statement, "Is the base equal to side 1?"
         +5
 '''
-side1_length = 5
-base_length = 6
-side2_length = 10
+side_1 = 5
+base = 6
+side_2 = 10
 
-# output test case values
-print("test case:")
-print("Side #1:",side1_length)
-print("base:",base_length)
-print("side #2:" , side2_length)
+# calculate the perimeter of the triagle
+perimeter = side_1 + base + side_2
 
-# calculate perimeter
-perimeter =side1_length + side2_length + base_length
-print("The perimeter of the triangle is:",perimeter)
-# output whether side 1 greater than side 2?
-print("Is side 1 greater than side 2?")
-if side1_length > side2_length:
-    print("yes")
+# Output the perimeter of the triangle
+print("The perimeter of your triangle is :", perimeter)
+
+# checking to see if side_1 is greater than side_2
+if side_1 > side_2 :
+    print("Is side 1 graeter than side 2 ? Yes")
+else: print("Is side 1 greater than side 2 ? No")
+
+# checking if the base is equal to side_1 
+if base == side_1:
+    print("Is the base equal to side 1 ? Yes ")
 else:
-    print("no")
+    print("Is the base equal to side 1 ? No ")
