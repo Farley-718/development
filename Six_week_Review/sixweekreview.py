@@ -1,19 +1,36 @@
 ''' Variables and Operators '''
 # Create a variable for your first name and a variable for your last name. Concatenate and print them in a new variable called 'fullname'.
+# first_name = "John"
+# last_name = "Doe"
+
+# fullname = first_name + " " + last_name
+
+# print("Full Name:", fullname)
 
 # Create a variable called greeting and assign it to string value of 'hip hop hooray'. Using multiplication, create a third variable called 'three cheers' which repeats greeting 3 times.
+# greeting = "hip hop hooray"
 
+# three_cheers = greeting * 3
+# print("Three cheers:", three_cheers)
 
 ''' Arithmetic Operators  '''
 
 # add 100 to 50
 
+# print(100 + 50)
+
 
 # add 25 to 60
 
+# print(25+60)
+
 # multiply 5 and 5
 
+# print(5*5)
+
 # multiply 6 and 3
+
+print(6*3)
 
 # subtract 15 from 45
 
