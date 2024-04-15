@@ -198,7 +198,7 @@ over_5_purchases = {'Finn', 'Simone', 'Aaron', 'Dominic'}
 
 
 
-'''
+print('''
 Exercise - Sets
 See flowchart
 You work at a company where some people know Python, some people know JavaScript, and some people know both.
@@ -206,4 +206,29 @@ In a loop, prompt the user to input an employee name, whether they know Python, 
 Use set operators to compute the following sets:
 The set of employees that know both Python and JavaScript
 The set of employees that know JavaScript, but not Python
-The set of employees that know Python or JavaScript, but not both '''
+The set of employees that know Python or JavaScript, but not both ''')
+
+# user instructions
+print(''' Python and js devloper tracker instructions 
+      input 's' or 'stop' at anytime''')
+
+
+# initialize our variables
+
+# put our error messages in a tuple 
+
+# While loop
+
+# User inputs
+dev_type_iput , dev_name_input = '', ''
+# string methods
+
+# break keyword, continue, if statement
+
+# print statement, formatted strings
+
+# sets
+
+
+
+
