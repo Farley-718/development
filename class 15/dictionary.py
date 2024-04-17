@@ -1,4 +1,6 @@
 from statistics import mode
+import pandas as pd 
+
 
 ''' Fun facts about dictionaries 
 
@@ -215,9 +217,9 @@ result = mode(use_stat_module)
 incomes = {"apple": 5600.00, "orange": 3500.00, "banana": 5000.00}
 total_income = 0.00
 
-for i in incomes.values():
-    total_income += i 
-    print(total_income)
+# for i in incomes.values():
+#     total_income += i 
+#     print(total_income)
 
 
 '''
@@ -235,3 +237,33 @@ records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
            {'name': 'David', 'title': 'developer', 'salary': 65000},
            {'name': 'Alice', 'title': 'consultant', 'salary': 25000},\
            {'name': 'David', 'title': 'consultant', 'salary': 40000}]
+# our output dictionaries
+title_salary_dict ={} # capture our titles and salary tools
+title_count_dict = {} # this  will capture title count
+
+#loop through our list of dictionaries 
+for r in records:
+   title= r['title']
+   salary = r['salary']
+   # if the job tttle does not currently exist , we will addd the title and the salary 
+   if title not in title_salary_dict:
+      title_salary_dict[title]= salary
+      title_count_dict[title] =1
+      print(title_count_dict)
+      print(title_salary_dict)
+   else:
+      # otherwise , we will update the salary, and update the count of titles 
+      title_salary_dict[title] += salary
+      title_count_dict[title]  += 1
+      # lets take look at our output
+
+print('all titles and sum of salaries ',title_salary_dict)
+print('titles, and the count of employees ', title_count_dict)
+
+
+
+
+# pandas solution
+df= pd.DataFrame.from_records(records)
+result = df.groupby('title')['salary'].mean()
+print(result)
