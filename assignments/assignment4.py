@@ -12,3 +12,12 @@ One string will be the first name, the second string will be the last name. full
  Now create a second python file, called name.py. 
  Import the module you just created and call the function with the necessary arguments so it prints a full names, reverse names, and initials as needed in the terminal'''
 
+def full_name(first_name, last_name):
+    return f"{first_name}{last_name}"
+
+def reverse_name(last_name , first_name):
+    return f"{last_name} {first_name}"
+
+def get_initials(first_name,last_name):
+    return f"{first_name[0]}.{last_name[0]}."
+
