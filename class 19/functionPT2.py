@@ -61,9 +61,19 @@ Mean: 3.4
 Median: 4
 Mode: 5
 '''
+# def get_stats(my_list):
+#     my_mean = statistics.mean(my_list)
+#     my_median = statistics.median(my_list)
+#     my_mode = statistics.mode(my_list)
+#     return f'Mean: {my_mean} \nMedian : {my_median} \nMode: {my_mode}'
 
-my_list = [1,2,4,5,5]
 
+
+
+# my_list = [1,2,4,5,5]
+# print(get_stats(my_list)) #this is a function call in a print statement 
+# get_stats(my_list) # this a function
+#this is  a function call 
 
 '''Global variables'''
 
@@ -89,30 +99,45 @@ Syntax: lambda arguments : expression
 '''
 
 # Function to add two numbers
+# def add_two(x,y):
+#     return x + y
+# print(add_two(5,7))
+
+add_two = lambda x, y  : x + y
+# print(add_two(5,7))
+
+
 
 
 
 # Written as a Lambda
-
+def add_two(x,y):
+    return x + y
 
 
 
 # Write the following functions as Lambdas
 
-def greeting(fname):
-    print(f'Hello, {fname}')
+# def greeting(fname):
+#     print(f'Hello, {fname}')
+fname = 'farley'
+greeting = lambda fname: f'hello, {fname}'
+print(greeting(fname))
 
+# def double_me(num):
+#     return num + num
+# print(double_me(20)) # function call , within a print statement
 
-def double_me(num):
-    return num + num
-
-
+# def double_me
 '''
 Exercise
 Write a lambda that computes the n-th power of a number, given two arguments, num and n.
 Now, write a function that is equivalent to the lambda.
 '''
-
+# def power(num,n):
+#     return num ** n
+# power = lambda num, n :num ** n
+# print(power(2,6))
 
 
 
@@ -127,13 +152,20 @@ map - returns a map object(which is an iterator) of the results after applying t
 '''
 # Let's use the filter function to find the even numbers in a list
 
+def even_function(n):
+  return n % 2 == 0
+# n = 5
+# print(even_function(n))
 
 
 my_list = [0,1,2,3,4,5,6,7,8,9,10]
+even_num_filter = filter(lambda n: n % 2 == 0 , my_list)
+print(list(even_num_filter))
 
 # Triple Me! Triple the numbers in this lsit
 
 triple_me = [0,1,2,3,4,5,6]
+result = map(lambda n : n * 4 , triple_me)
 
 # Lambda with sort
 
@@ -144,8 +176,11 @@ students = [{"name":"Kim","grade":98},
             {"name":"Torrie","grade":65},
             {"name":"Simon","grade":78}]
 
+students_by_name = sorted( students , key = lambda s: s['name'], reverse= reversed)
+print(students_by_name)
 
-
+students_by_grade = sorted(students , key = lambda s: s['grade'],reverse= reversed)
+print(students_by_grade)
 '''
 Assignment 6
 Write a simple function that returns a person's net worth. Here are your requirements:
