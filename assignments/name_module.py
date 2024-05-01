@@ -20,6 +20,4 @@ def reverse_name(last_name , first_name):
 
 def get_initials(first_name,last_name):
     return f"{first_name[0]}.{last_name[0]}."
-if __name__ == "__main__":
-    print(full_name("Joseph","Simpson"))
-    
+
