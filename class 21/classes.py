@@ -166,14 +166,31 @@ class Dog :
 dog1 = Dog('Fido',2020 , 'Golden Retriver')# created our first object of dog class
 dog2 = Dog('Zuzu',2021, 'dacsund')
 dog3 = Dog('Pierre', 2013, 'Pitbull')
-print(dog1)
-print(dog2)
-print(dog3)
+# print(dog1)
+# print(dog2)
+# print(dog3)
 
 
 today = datetime.datetime.now()
 year = today.year
-print(year)
-print(dog1.human_age())
-print(dog2.human_age())
-print(dog3.human_age())
+# print(year)
+# print(dog1.human_age())
+# print(dog2.human_age())
+# print(dog3.human_age())
+
+'''Excercise - date class
+1. display the date in a format'''
+
+class Date:
+    def __init__(self,year= 1970 , month=1 , day=1):
+        ''' these are our parameters'''
+        self.year = year
+        self.month = month 
+        self.day = day 
+    def __str__(self):
+        return f'Month :{self.month: 02d} \ nDay: {self.day :02d}\nYear : {self.year}'
+    def __eq__(self, other):
+        if self.year == other.year and self.month == other.month and self.day == other.day:
+            return True
+        return False
+    def leap_year(self):
